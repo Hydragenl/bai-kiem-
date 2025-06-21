@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myfood_lqhuy">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyFood_lqhuy"
+        tools:targetApi="31">
+
+        <!-- ✅ Màn hình khởi động: Đăng nhập -->
+        <activity
+            android:name=".LoginActivity_lqhuy"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ✅ Màn hình đăng ký tài khoản -->
+        <activity android:name=".RegisterActivity_lqhuy" />
+
+        <!-- ✅ Màn hình chính sau khi đăng nhập -->
+        <activity android:name=".HomeActivity_lqhuy" />
+
+        <!-- ✅ Màn hình danh sách món ăn theo nhà hàng -->
+        <activity android:name=".FoodListActivity_lqhuy" />
+
+        <!-- ✅ Màn hình chi tiết món ăn -->
+        <activity android:name=".FoodDetailActivity_lqhuy" />
+
+        <!-- ⚙️ Nếu có dùng MainActivity cho test -->
+        <activity android:name=".MainActivity" />
+
+    </application>
+
+</manifest>
